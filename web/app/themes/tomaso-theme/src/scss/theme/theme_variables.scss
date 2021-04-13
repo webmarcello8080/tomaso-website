@@ -4,6 +4,7 @@ $secondary: #FE043C;
 $black: #000000;
 $green: #31A24C;
 $body-color: #707070;
+$white: #FFFFFF;
 $light: #FFEDDE;
 
 // Fonts
@@ -13,10 +14,10 @@ $small-font-size: $font-size-base * 0.875;
 $headings-line-height: 1.3;
 
 // Sizes
-$container: 1655px;
-$post-container: 900px;
+$container: 1450px;
+$small-container: 1175px;
 $spacer: 1rem;
-$header-height: 100px;
+$header-margin-top: 50px;
 
 // Border Radius
 $border-radius:  .5rem;

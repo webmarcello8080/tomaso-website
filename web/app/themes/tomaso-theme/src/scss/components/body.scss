@@ -1,0 +1,17 @@
+body{
+   background-color: $light;
+   background-image: url('../images/background/rotated-background-image-small.png');
+   background-repeat: no-repeat;
+   background-position: left 0 top 0;
+   #page{
+      background-color: $white;
+      margin-top: $header-margin-top;
+      margin-bottom: $header-margin-top;
+      box-shadow: 0px 35px 90px rgba(0, 0, 0, 0.25);
+
+      .no-padding{
+         padding-right: 0 !important;
+         padding-left: 0 !important;
+      }
+   }
+}

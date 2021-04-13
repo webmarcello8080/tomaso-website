@@ -4,7 +4,7 @@
 
    <?php dynamic_sidebar( 'copyright_area' ); ?>
    
-</div><!-- page -->
+</div><!-- ID page -->
 
 <?php wp_footer(); ?>
 </body>

@@ -15,7 +15,7 @@ class Header{
                   echo '<img class="' . $logo_classes . '" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
             } else {
                   echo '<h1>'. get_bloginfo('name') .'</h1>';
-                  echo '<h3>'. get_bloginfo('description') .'</h3>';
+                  echo '<h5>'. get_bloginfo('description') .'</h5>';
             }
             ?>         
          </a>

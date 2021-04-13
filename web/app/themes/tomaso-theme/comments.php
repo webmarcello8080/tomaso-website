@@ -20,7 +20,7 @@ $comment_form_title_6 = $tomaso_azara_theme_options['comment_form_title_6'];
 	if ( have_comments() ) :
 		;
 		?>
-		<h2 class="comments-title mb-4 post-container-width">
+		<h2 class="comments-title mb-4">
 			<?php if ( '1' === $comment_count ) : ?>
 				<?php esc_html_e( '1 comment', 'tomaso_azara' ); ?>
 			<?php else : ?>
@@ -34,7 +34,7 @@ $comment_form_title_6 = $tomaso_azara_theme_options['comment_form_title_6'];
 			<?php endif; ?>
 		</h2><!-- .comments-title -->
 
-		<div class="post-container-width mb-4">
+		<div class="mb-4">
 			<ol class="comment-list">
 				<?php
 				wp_list_comments(
@@ -70,7 +70,7 @@ $comment_form_title_6 = $tomaso_azara_theme_options['comment_form_title_6'];
 		?>
 
 		<?php if ( ! comments_open() ) : ?>
-			<p class="no-comments post-container-width"><?php esc_html_e( 'Comments are closed.', 'tomaso_azara' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'tomaso_azara' ); ?></p>
 		<?php endif; ?>
 	<?php endif; ?>
 
@@ -78,7 +78,7 @@ $comment_form_title_6 = $tomaso_azara_theme_options['comment_form_title_6'];
 	comment_form(
 		array(
 			'logged_in_as'       => null,
-			'class_container'    => 'comment-respond post-container-width',
+			'class_container'    => 'comment-respond',
 			'title_reply'        => esc_html__( $comment_form_title_6, 'tomaso_azara' ),
 			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title text-center">',
 			'title_reply_after'  => '</h2>',

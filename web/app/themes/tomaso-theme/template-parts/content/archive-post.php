@@ -3,7 +3,7 @@
 $tomaso_azara_theme_options = get_option( 'tomaso_azara_theme_option_name' );
 $no_posts_text_1 = $tomaso_azara_theme_options['no_posts_text_1'];
 ?>
-<div class="container-xl category-wrapper">
+<div class="category-wrapper">
 	
 	<?php if ( have_posts() ) : ?>
 

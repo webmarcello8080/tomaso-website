@@ -25,4 +25,9 @@ web/.htaccess
 wp-cli.local.yml
 
 # Marcello
+web/app/themes/tomaso-theme/node_modules
+web/app/themes/tomaso-theme/*.json
+web/app/themes/tomaso-theme/*.js
+web/app/themes/tomaso-theme/.babelrc
+#web/app/themes/tomaso-theme/dist
 debug.log

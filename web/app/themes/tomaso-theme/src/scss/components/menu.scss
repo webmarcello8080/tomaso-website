@@ -1,10 +1,69 @@
 .site-header{
    position: sticky;
    top: 0;
+   background-color: $white;
+   z-index: 10;
    
    .navbar-wrapper{
       .logo-wrapper{
          white-space: normal;
+      }
+
+      .navbar-collapse{
+         .navbar-nav{
+            @include media-breakpoint-down(md) {
+               margin-left: 0 !important;
+            }
+            .menu-item{
+               margin-left: $spacer * 2;
+               margin-right: $spacer * 2;
+               color: $primary;
+
+               .dropdown-toggle{
+                  &:after{
+                     margin-left: $spacer;
+                  }
+               }
+               .dropdown-menu {
+                  border-radius: 0;
+                  @include media-breakpoint-down(md) {
+                     border: 0 !important;
+                  }
+                  .menu-item{
+                     margin-left: 0;
+                     margin-right: 0;
+
+                     .dropdown-item{
+                        color: $primary;
+                        &:hover{
+                           background-color: $light;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .navbar-toggler{
+         .navbar-burger-line{
+            display: block;
+            height: 3px;
+            margin-bottom: 6px;
+            position: relative;
+            background: $primary;
+
+            &:nth-child(1) {
+               width: 35px;
+            }
+            &:nth-child(2) {
+               width: 35px;
+            }
+            &:nth-child(3) {
+               width: 20px;
+               margin-left: 14px;
+            }
+         }
       }
    }
 }

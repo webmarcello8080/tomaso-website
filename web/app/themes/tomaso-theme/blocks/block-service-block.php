@@ -3,6 +3,7 @@
 $plate = file_get_contents( get_template_directory() . "/dist/images/icons/plate.svg");
 $table = file_get_contents( get_template_directory() . "/dist/images/icons/table.svg");
 $vespa = file_get_contents( get_template_directory() . "/dist/images/icons/vespa.svg");
+$dots = file_get_contents( get_template_directory() . "/dist/images/background/dots.svg");
 ?>
 <section class="service-block my-5 <?php block_field('className'); ?>" >
    <div class="service-block-wrapper small-container">
@@ -62,4 +63,5 @@ $vespa = file_get_contents( get_template_directory() . "/dist/images/icons/vespa
          </div>
       </div>
    </div>
+   <div class="dots-background"><?= $dots; ?></div>
 </section>

@@ -6,7 +6,7 @@ $page_404_content_5 = $tomaso_azara_theme_options['404_page_content_5'];
 get_header(); 
 ?>
 
-	<?php get_template_part( 'template-parts/header/home-header' ); ?>
+	<?php get_template_part( 'template-parts/header/page-header' ); ?>
 
 	<div class="error-404 not-found container-lg">
 		<div class="entry-content text-center">

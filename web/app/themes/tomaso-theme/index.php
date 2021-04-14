@@ -5,7 +5,7 @@ $no_posts_text_1 = $tomaso_azara_theme_options['no_posts_text_1'];
 get_header() 
 ?>
 
-<?php get_template_part( 'template-parts/header/home-header' ); ?>
+<?php get_template_part( 'template-parts/header/page-header' ); ?>
 
 <div class="container-xl category-wrapper">
 	

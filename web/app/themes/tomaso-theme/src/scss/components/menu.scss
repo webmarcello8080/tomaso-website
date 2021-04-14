@@ -30,6 +30,7 @@
                }
                .dropdown-menu {
                   border-radius: 0;
+                  background-color: $site-background;
                   @include media-breakpoint-down(md) {
                      border: 0 !important;
                   }

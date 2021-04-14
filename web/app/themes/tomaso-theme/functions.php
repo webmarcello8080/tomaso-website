@@ -24,3 +24,4 @@ new \NewWebMarcello\admin\Footer();
 if ( is_admin() ){
   new \NewWebMarcello\admin\Menu();
 }
+new \NewWebMarcello\admin\Products();

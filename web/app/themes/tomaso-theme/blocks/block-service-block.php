@@ -23,7 +23,9 @@ $vespa = file_get_contents( get_template_directory() . "/dist/images/icons/vespa
                <div class="col-6 service-block-small-wrapper">
                   <div class="d-flex justify-content-center align-items-center">
                      <div class="text-center">
-                        <h6 class="service-block-small-title"><?php block_field('customer-title'); ?></h6>
+                        <a href="<?php block_field('customer-link'); ?>">
+                           <h6 class="service-block-small-title"><?php block_field('customer-title'); ?></h6>
+                        </a>
                         <p class="service-block-small-text"><small><?php block_field('customer-text'); ?></small></p>
                      </div>
                   </div>
@@ -33,7 +35,9 @@ $vespa = file_get_contents( get_template_directory() . "/dist/images/icons/vespa
                <div class="col-6 service-block-small-wrapper">
                   <div class="d-flex justify-content-center align-items-center">
                      <div class="text-center">
-                        <h6 class="service-block-small-title"><?php block_field('plate-title'); ?></h6>
+                        <a href="<?php block_field('plate-link'); ?>">
+                           <h6 class="service-block-small-title"><?php block_field('plate-title'); ?></h6>
+                        </a>
                         <p class="service-block-small-text"><small><?php block_field('plate-text'); ?></small></p>
                      </div>
                   </div>
@@ -49,7 +53,9 @@ $vespa = file_get_contents( get_template_directory() . "/dist/images/icons/vespa
             <div class="d-flex justify-content-center align-items-center">
                <div class="text-center">
                   <a href="<?php block_field('delivery-link'); ?>"><?= $vespa; ?></a>
-                  <h6 class="service-block-small-title"><?php block_field('delivery-title'); ?></h6>
+                  <a href="<?php block_field('delivery-link'); ?>">
+                     <h6 class="service-block-small-title"><?php block_field('delivery-title'); ?></h6>
+                  </a>
                   <p class="service-block-small-text"><small><?php block_field('delivery-text'); ?></small></p>
                </div>
             </div>

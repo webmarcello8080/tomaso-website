@@ -1,0 +1,12 @@
+.page-header{
+   border-left: 25px solid $secondary;
+   display: flex;
+   align-items: center;
+   min-height: 100px;
+   margin-bottom: $spacer;
+
+   .page-header-title{
+      padding-left: 20px;
+      margin-bottom: 0 !important;
+   }
+}

@@ -1,0 +1,32 @@
+.service-block{
+   .service-block-wrapper{
+      .service-block-body{
+         .service-block-big-wrapper{
+            padding: 80px;
+            svg{
+               width: 200px;
+            }
+         }
+         .service-block-body-left{
+            @include media-breakpoint-down(md) {
+               padding-right: $spacer !important;
+               margin-bottom: $spacer * 1.5;
+            }
+            .service-block-small-wrapper{
+               padding: $spacer * 2;
+               svg{
+                  width: 150px;
+               }
+            }
+         }
+         .service-block-small-title{
+            width: 100%;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: $spacer;
+            border-bottom: 2px solid $secondary;
+         }
+      }
+   }
+}

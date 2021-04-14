@@ -1,7 +1,13 @@
 .service-block{
    .service-block-wrapper{
+      .service-block-header{
+         .service-block-text{
+            z-index: 1;
+         }
+      }
       .service-block-body{
          .service-block-big-wrapper{
+            z-index: 1;
             padding: 80px;
             svg{
                width: 200px;
@@ -13,6 +19,7 @@
                margin-bottom: $spacer * 1.5;
             }
             .service-block-small-wrapper{
+               z-index: 1;
                padding: $spacer * 2;
                svg{
                   width: 150px;

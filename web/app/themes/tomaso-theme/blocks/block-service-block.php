@@ -4,7 +4,7 @@ $plate = file_get_contents( get_template_directory() . "/dist/images/icons/plate
 $table = file_get_contents( get_template_directory() . "/dist/images/icons/table.svg");
 $vespa = file_get_contents( get_template_directory() . "/dist/images/icons/vespa.svg");
 ?>
-<section class="service-block my-5 <?php block_field('className'); ?>">
+<section class="service-block my-5 <?php block_field('className'); ?>" >
    <div class="service-block-wrapper small-container">
       <div class="service-block-header row mb-5">
          <div class="service-block-title page-header col-md-4">

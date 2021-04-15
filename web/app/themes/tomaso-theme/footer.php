@@ -2,7 +2,7 @@
    
    <?php get_template_part( 'template-parts/footer/site-footer' ); ?>
 
-   <?php dynamic_sidebar( 'copyright_area' ); ?>
+   <?php get_template_part( 'template-parts/footer/copyright-footer' ); ?>
    
 </div><!-- ID page -->
 

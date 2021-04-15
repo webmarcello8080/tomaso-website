@@ -4,12 +4,12 @@ $categories = new \NewWebMarcello\frontend\Categories;
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php if(has_post_thumbnail()) : ?>
-			<div class="mb-5">
-				<?php the_post_thumbnail('full', ['class' => 'post-img']); ?>
-			</div>
+		<div class="post-img-wrapper mb-5">
+			<?php the_post_thumbnail('full', ['class' => 'post-img']); ?>
+		</div>
 	<?php endif; ?>
 
-	<div class="entry-content">
+	<div class="entry-content mb-5">
 		<?php
 
 		the_content();

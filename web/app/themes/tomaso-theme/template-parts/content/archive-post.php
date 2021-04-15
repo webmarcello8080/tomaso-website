@@ -7,7 +7,7 @@ $no_posts_text_1 = $tomaso_azara_theme_options['no_posts_text_1'];
 	
 	<?php if ( have_posts() ) : ?>
 
-		<div class="row mt-5">
+		<div class="small-container row mt-5">
 
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>

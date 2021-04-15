@@ -7,7 +7,7 @@ class Products{
    * Price = get_post_meta( get_the_ID(), 'product_option_price', true )
    * VAT = get_post_meta( get_the_ID(), 'product_option_vat', true )
    */
-	private $config = '{"title":"Product Option","prefix":"product_option_","domain":"product-option","class_name":"Product_Option","post-type":["post"],"context":"normal","priority":"default","cpt":"product","fields":[{"type":"text","label":"Price","id":"product_option_price"},{"type":"text","label":"VAT","id":"product_option_vat"}]}';
+	private $config = '{"title":"Product Option","prefix":"product_option_","domain":"product-option","class_name":"Product_Option","post-type":["product"],"context":"normal","priority":"default","cpt":"product","fields":[{"type":"text","label":"Price","id":"product_option_price"},{"type":"text","label":"VAT","id":"product_option_vat"}]}';
 
    public function __construct(){
       add_action( 'init', array($this, 'custom_post_type'), 0 );

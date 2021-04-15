@@ -11,7 +11,7 @@ get_header()
 	
 	<?php if ( have_posts() ) : ?>
 
-		<div class="row mt-5">
+		<div class="small-container row mt-5">
 
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>

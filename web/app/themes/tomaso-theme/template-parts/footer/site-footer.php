@@ -1,5 +1,6 @@
 <?php
 // get background images
+$dots = file_get_contents( get_template_directory() . "/dist/images/background/small-background-dots.svg");
 ?>
 <footer id="footer" class="footer-section bg-light row py-4">
    <div class="small-container footer-wrapper">
@@ -13,4 +14,5 @@
          <?php dynamic_sidebar( 'footer_area_three' ); ?>
       </div>
    </div>
+   <div class="background-dots"><?= $dots ?></div>
 </footer>

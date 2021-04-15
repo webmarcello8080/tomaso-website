@@ -1,0 +1,14 @@
+.product{
+   .product-wrapper{
+      .product-body{
+         @include media-breakpoint-down(md) {
+            padding-left: $spacer !important;
+         }
+         .product-table{
+            .product-table-category{
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+}

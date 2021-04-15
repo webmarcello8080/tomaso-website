@@ -12,7 +12,7 @@ class Products{
    public function __construct(){
       add_action( 'init', array($this, 'custom_post_type'), 0 );
       add_action( 'init', array($this, 'custom_location'), 0 );
-      // add_action( 'init', array($this, 'custom_taxonomy'), 0 );
+      add_action( 'init', array($this, 'custom_taxonomy'), 0 );
       
 		$this->config = json_decode( $this->config, true );
 		$this->process_cpts();

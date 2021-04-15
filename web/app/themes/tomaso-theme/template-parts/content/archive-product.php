@@ -2,9 +2,15 @@
 // get theme options
 $tomaso_azara_theme_options = get_option( 'tomaso_azara_theme_option_name' );
 $no_posts_text_1 = $tomaso_azara_theme_options['no_posts_text_1'];
+// call category class
+$categoty = new NewWebMarcello\Frontend\Categories;
 ?>
 <div class="category-wrapper">
 	
+	<div class="text-center small-container product-category-wrapper">
+		<?php $categoty->getAllCategoryLink('product_type', 'badge badge-secondary product-category', '') ?>
+	</div>
+
 	<?php if ( have_posts() ) : ?>
 
 		<div class="small-container row my-5">

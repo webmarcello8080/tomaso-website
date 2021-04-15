@@ -3,6 +3,8 @@ body{
    background-image: url('../images/background/rotated-background-image-small.png');
    background-repeat: no-repeat;
    background-position: left 0 top 0;
+   background-attachment: fixed;
+   
    #page{
       background-color: $site-background;
       margin-top: $header-margin-top;

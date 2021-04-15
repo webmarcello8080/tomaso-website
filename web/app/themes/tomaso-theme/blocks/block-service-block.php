@@ -7,7 +7,7 @@ $dots = file_get_contents( get_template_directory() . "/dist/images/background/d
 ?>
 <section class="service-block margin-bottom <?php block_field('className'); ?>" >
    <div class="service-block-wrapper small-container">
-      <div class="service-block-header row mb-5">
+      <div class="service-block-header row margin-bottom">
          <div class="service-block-title page-header col-md-4">
             <h3 class="page-header-title"><?php block_field('service-block-title'); ?></h3>
          </div>

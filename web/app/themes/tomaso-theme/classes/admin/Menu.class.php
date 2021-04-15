@@ -124,6 +124,14 @@ class Menu {
 			'tomaso_azara_blog_section' // section
 		);
 
+		add_settings_field(
+			'excerpt_length', // id
+			'The Excerpt Lenght', // title
+			array( $this, 'excerpt_length_callback' ), // callback
+			'tomaso-azara-theme-admin', // page
+			'tomaso_azara_blog_section' // section
+		);
+
 	}
 
 	public function tomaso_azara_theme_sanitize($input) {
@@ -154,6 +162,10 @@ class Menu {
 
 		if ( isset( $input['read_more_7'] ) ) {
 			$sanitary_values['read_more_7'] = sanitize_text_field( $input['read_more_7'] );
+		}
+
+		if ( isset( $input['excerpt_length'] ) ) {
+			$sanitary_values['excerpt_length'] = sanitize_text_field( $input['excerpt_length'] );
 		}
 
 		return $sanitary_values;
@@ -212,6 +224,12 @@ class Menu {
 		);
 	}
 
+	public function excerpt_length_callback() {
+		printf(
+			'<input class="regular-text" type="number" name="tomaso_azara_theme_option_name[excerpt_length]" id="excerpt_length" value="%s">',
+			isset( $this->tomaso_azara_theme_options['excerpt_length'] ) ? esc_attr( $this->tomaso_azara_theme_options['excerpt_length']) : ''
+		);
+	}
 }
 
 /* 

@@ -9,7 +9,7 @@ $aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( $args[
 ?>
 <form role="search" <?php echo $aria_label; ?> method="get" class="search-form form-inline justify-content-center" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<div class="form-group">
-		<label class="" for="<?php echo esc_attr( $unique_id ); ?>"><?php _e( 'Search&hellip;', 'tomaso_azara' ); ?></label>
+		<label class="h5 text-primary" for="<?php echo esc_attr( $unique_id ); ?>"><?php _e( 'Search&hellip;', 'tomaso_azara' ); ?></label>
 	</div>
 	<div class="form-group mx-3">
 		<input type="search" id="<?php echo esc_attr( $unique_id ); ?>" class="search-field form-control" value="<?php echo get_search_query(); ?>" name="s" />

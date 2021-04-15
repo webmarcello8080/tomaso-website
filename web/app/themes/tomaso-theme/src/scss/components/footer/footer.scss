@@ -1,0 +1,19 @@
+.footer-section{
+   overflow: hidden;
+   background-image: url('../images/background/gabage.png');
+   background-repeat: no-repeat;
+   background-position: right -250px top -150px;
+   
+   .footer-wrapper{
+      .footer-area{
+         ul{
+            list-style-type: none;
+            margin: auto;
+            li{
+               display: inline-block;
+               margin: 0 $spacer * 0.5;
+            }
+         }
+      }
+   }
+}

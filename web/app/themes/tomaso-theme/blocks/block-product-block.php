@@ -9,7 +9,7 @@ $query_result = new WP_Query( array(
 $tomaso_azara_theme_options = get_option( 'tomaso_azara_theme_option_name' );
 $no_posts_text_1 = $tomaso_azara_theme_options['no_posts_text_1'];
 ?>
-<section class="product-block my-5 <?php block_field('className'); ?>" >
+<section class="product-block margin-bottom <?php block_field('className'); ?>" >
    <div class="product-block-wrapper small-container">
       <div class="product-block-header text-center mb-5">
          <a href="/product"><h3 class="product-block-title"><?php block_field('block-title'); ?></h3></a>

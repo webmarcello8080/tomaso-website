@@ -20,7 +20,7 @@ $categoty = new NewWebMarcello\Frontend\Categories;
 							</tr>
 							<tr>
 								<td>VAT:</td>
-								<td>%<?= get_post_meta( get_the_ID(), 'product_option_vat', true ); ?></td>
+								<td><?= get_post_meta( get_the_ID(), 'product_option_vat', true ); ?>%</td>
 							</tr>
 							<tr>
 								<td>This product is from:</td>

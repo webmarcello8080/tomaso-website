@@ -18,19 +18,24 @@ p{
 // buttons
 .btn{
   padding: 10px 32px;
+  border-radius: 0;
 }
 .btn-sm{
   padding: 5px 16px;
 }
 .btn-lg{
-  padding: 16px 39px;
+  text-transform: uppercase;
+  font-size: $font-size-base * 1.5;
+  font-weight: bold;
 }
 .wp-block-button__link {
   color: $site-background;
   background-color: $primary;
   border-color: $primary;
 }
-
+.margin-bottom{
+  margin-bottom: $spacer * 5;
+}
 // badges
 .badge{
   padding: 5px 10px;

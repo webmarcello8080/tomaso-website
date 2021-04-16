@@ -24,6 +24,7 @@ $images = new \NewWebMarcello\Frontend\Images;
                      <div class="d-flex align-items-center h-100 slider-block-text-wrapper">
                         <div class="text-left slider-block-text">
                            <h1 class="slider-title"><?php block_field('first-title')?></h1>
+                           <h5 class="slider-description mb-3"><?php block_field('first-description')?></h5>
                            <?php if(block_value('first-link')): ?>
                               <a href="<?php block_field('first-link') ?>"><div class="btn btn-lg btn-secondary">Go</div></a>
                            <?php endif; ?>
@@ -57,6 +58,7 @@ $images = new \NewWebMarcello\Frontend\Images;
                      <div class="d-flex align-items-center h-100 slider-block-text-wrapper">
                         <div class="text-left slider-block-text">
                            <h1 class="slider-title"><?php block_field('second-title')?></h1>
+                           <h5 class="slider-description mb-3"><?php block_field('second-description')?></h5>
                            <?php if(block_value('second-link')): ?>
                               <a href="<?php block_field('second-link') ?>"><div class="btn btn-lg btn-secondary">Go</div></a>
                            <?php endif; ?>
@@ -74,6 +76,7 @@ $images = new \NewWebMarcello\Frontend\Images;
                      <div class="d-flex align-items-center h-100 slider-block-text-wrapper">
                         <div class="text-left slider-block-text">
                            <h1 class="slider-title"><?php block_field('third-title')?></h1>
+                           <h5 class="slider-description mb-3"><?php block_field('third-description')?></h5>
                            <?php if(block_value('third-link')): ?>
                               <a href="<?php block_field('third-link') ?>"><div class="btn btn-lg btn-secondary">Go</div></a>
                            <?php endif; ?>

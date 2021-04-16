@@ -3,16 +3,16 @@ $dots = file_get_contents( get_template_directory() . "/dist/images/background/s
 $images = new \NewWebMarcello\Frontend\Images;
 ?>
 <section class="slider-block margin-bottom <?php block_field('className'); ?>" >
-   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+   <div id="tomasoCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
          <?php if(block_value('first-title')): ?>
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#tomasoCarousel" data-slide-to="0" class="active"></li>
          <?php endif; ?>
          <?php if(block_value('second-title')): ?>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#tomasoCarousel" data-slide-to="1"></li>
          <?php endif; ?>
          <?php if(block_value('third-title')): ?>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#tomasoCarousel" data-slide-to="2"></li>
          <?php endif; ?>
       </ol>
       <div class="carousel-inner slider-block-wrapper">

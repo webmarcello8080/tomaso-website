@@ -1,0 +1,17 @@
+.quotation-block{
+   .quotation-block-wrapper{
+      .wp-block-quote{
+         .quotation-block-cite{
+            margin-top: 0;
+            font-weight: bold;
+            color: $primary;
+         }
+         .quotation-block-link{
+            font-size: $font-size-base;
+            font-weight: bold;
+            color: $primary;
+            text-decoration: underline;
+         }
+      }
+   }
+}

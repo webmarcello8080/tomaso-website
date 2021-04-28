@@ -1,3 +1,7 @@
+<?php get_header(); ?>
+
+<?php get_template_part( 'template-parts/header/category-header' ); ?>
+
 <?php 
 // get theme options
 $tomaso_azara_theme_options = get_option( 'tomaso_azara_theme_option_name' );
@@ -6,9 +10,8 @@ $no_posts_text_1 = $tomaso_azara_theme_options['no_posts_text_1'];
 $categoty = new NewWebMarcello\Frontend\Categories;
 ?>
 <div class="category-wrapper">
-	
 	<div class="text-center small-container product-category-wrapper">
-		<?php $categoty->getAllCategoryLink('product_type', 'badge badge-secondary product-category', '') ?>
+		<?php $categoty->getAllCategoryLink('product_cat', 'badge badge-secondary product-category', '') ?>
 	</div>
 
 	<?php if ( have_posts() ) : ?>
@@ -39,3 +42,5 @@ $categoty = new NewWebMarcello\Frontend\Categories;
 	<?php endif; ?>
 
 </div>
+
+<?php get_footer(); ?>

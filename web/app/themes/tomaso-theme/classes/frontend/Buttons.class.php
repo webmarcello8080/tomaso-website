@@ -18,7 +18,7 @@ class Buttons{
    public function get_add_to_card( $product_id, $classes = '', $text = 'Add to Card' ){
       $product = wc_get_product( $product_id );
       // get the "Checkout Page" URL
-      $cart_url = WC()->cart->get_cart_url();
+      $cart_url = wc_get_cart_url();
    
       // run only on simple products
       if( $product->is_type( 'simple' ) ){

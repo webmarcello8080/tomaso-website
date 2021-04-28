@@ -15,8 +15,8 @@
                margin-left: 0 !important;
             }
             .menu-item{
-               margin-left: $spacer * 2;
-               margin-right: $spacer * 2;
+               margin-left: $spacer;
+               margin-right: $spacer;
                color: $primary;
                &:hover{
                   background-color: $light;

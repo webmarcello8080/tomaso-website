@@ -1,13 +1,28 @@
 .product{
-   .product-wrapper{
-      .product-body{
-         @include media-breakpoint-down(md) {
-            padding-left: $spacer !important;
-         }
-         .product-table{
-            .product-table-category{
-               text-decoration: underline;
+   .summary{
+      .cart{
+         .quantity{
+            .qty{
+               padding: 0.3rem 1rem;
+               border-radius: 0;
+               margin-bottom: $spacer;
             }
+         }
+         .single_add_to_cart_button{
+            background-color: $secondary;
+            padding: 10px 32px;
+            border-radius: 0;
+
+            &:hover {
+               background-color: #db0132;
+               border-color: #ce012f;
+            }
+         }
+      }
+      .product_meta{
+         .posted_in{
+            font-weight: 700 !important;
+            font-size: $font-size-base * 1.25;
          }
       }
    }

@@ -4,10 +4,19 @@ namespace NewWebMarcello\Admin;
 class Products{
 
    public function __construct(){
+      // remove useless fields on product page
       add_action( 'init', array($this, 'remove_wc'), 0 );
+      // display related product on product page
       add_action( 'woocommerce_after_single_product_summary', array($this, 'related_products'), 20);
-
+      // create custom unit field
+      add_action( 'woocommerce_product_options_general_product_data', array($this, 'create_unit_field') );
+      // save custom unit field
+      add_action( 'woocommerce_process_product_meta', array($this, 'save_unit_field') );
+      // display price with custom unit field
       add_filter( 'woocommerce_get_price_html', array($this,'change_product_html'), 10, 2 );
+      // minimum amount per order
+      add_action( 'woocommerce_checkout_process', array($this,'minimum_order_amount') );
+      add_action( 'woocommerce_before_cart' , array($this,'minimum_order_amount') );
    }
 
    public function remove_wc() {
@@ -18,9 +27,28 @@ class Products{
    }
 
    public function change_product_html( $price_html, $product ) {
-      $price_html = '<span class="amount text-secondary font-weight-bold">' . get_woocommerce_currency_symbol() . '' . $product->get_price() . ' per Kilo</span>';
+      $unit = $product->get_meta( 'custom_unit_field' );
+      $price_html = '<span class="amount text-secondary font-weight-bold">' . get_woocommerce_currency_symbol() . '' . $product->get_price() . ' per ' . $unit . '</span>';
       
       return $price_html;
+   }
+
+   public function create_unit_field(){
+      $args = array(
+         'id' => 'custom_unit_field',
+         'label' => __( 'Unita\' di misura', 'tomaso_azara' ),
+         'class' => 'unit-field',
+         'desc_tip' => true,
+         'description' => __( 'This field will appear by the price on the product page.', 'tomaso_azara' ),
+      );
+      woocommerce_wp_text_input( $args );
+   }
+
+   public function save_unit_field( $post_id ){
+      $product = wc_get_product( $post_id );
+      $title = isset( $_POST['custom_unit_field'] ) ? $_POST['custom_unit_field'] : '';
+      $product->update_meta_data( 'custom_unit_field', sanitize_text_field( $title ) );
+      $product->save();
    }
 
    public function related_products(){
@@ -60,6 +88,34 @@ class Products{
                </div>
             </section>
          <?php
+      }
+   }
+
+   public function minimum_order_amount(){
+      // Set this variable to specify a minimum order value
+      $minimum = 30;
+
+      if ( WC()->cart->total < $minimum ) {
+
+         if( is_cart() ) {
+
+               wc_print_notice( 
+                  sprintf( 'Your current order total is %s — you must have an order with a minimum of %s to place your order ' , 
+                     wc_price( WC()->cart->total ), 
+                     wc_price( $minimum )
+                  ), 'error' 
+               );
+
+         } else {
+
+               wc_add_notice( 
+                  sprintf( 'Your current order total is %s — you must have an order with a minimum of %s to place your order' , 
+                     wc_price( WC()->cart->total ), 
+                     wc_price( $minimum )
+                  ), 'error' 
+               );
+
+         }
       }
    }
 }

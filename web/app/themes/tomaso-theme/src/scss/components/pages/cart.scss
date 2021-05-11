@@ -1,0 +1,16 @@
+.woocommerce{
+   button.button.alt, .checkout-button{
+      background-color: $secondary !important;
+      border-radius: 0 !important;
+   }
+   .col2-set{
+      .col-1, .col-2{
+         max-width: unset;
+      }
+   }
+   form{
+      .form-row{
+         display: block;
+      }
+   }
+}

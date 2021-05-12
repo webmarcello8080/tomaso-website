@@ -3,6 +3,7 @@
    overflow: hidden;
    .service-block-wrapper{
       .service-block-header{
+         flex-wrap: wrap;
          .service-block-text{
             z-index: 1;
          }

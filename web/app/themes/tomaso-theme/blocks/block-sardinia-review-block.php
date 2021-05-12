@@ -1,8 +1,8 @@
-<section class="sardinia-review-block margin-bottom <?php block_field('className'); ?>" >
-   <div class="sardinia-review-block-header text-center">
+<section class="sardinia-review-block bg-light row justify-content-center margin-bottom <?php block_field('className'); ?>" >
+   <div class="sardinia-review-block-header py-3 text-center">
       <a href="<?php block_field('link'); ?>"><h3 class="sardinia-review-block-title"><?php block_field('title'); ?></h3></a>
    </div>
-   <div id="sardiniaReviewCarousel" class="carousel slide" data-ride="carousel">
+   <div id="sardiniaReviewCarousel" class="carousel slide small-container" data-ride="carousel">
       <ol class="carousel-indicators">
          <?php if(block_value('review-1')): ?>
             <li data-target="#sardiniaReviewCarousel" data-slide-to="0" class="active"></li>

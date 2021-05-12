@@ -9,7 +9,7 @@ $container-max-widths: (
 }
 .entry-content {
    & > *{
-      &:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.slider-block):not(.aboutus-block ){
+      &:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.sardinia-review-block):not(.slider-block):not(.aboutus-block ){
          max-width: $small-container;
          margin-left: auto;
          margin-right: auto;

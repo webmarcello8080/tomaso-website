@@ -15,7 +15,7 @@ $dots = file_get_contents( get_template_directory() . "/dist/images/background/d
       </div>
       <div class="service-block-body row align-items-center my-5">
          <div class="col-md-7 pr-5 service-block-body-left">
-            <div class="row mb-4">
+            <div class="d-flex mb-4">
                <div class="col-6 bg-light service-block-small-wrapper">
                   <div class="d-flex justify-content-center align-items-center">
                      <a href="<?php block_field('customer-link'); ?>"><?= $table; ?></a>
@@ -32,7 +32,7 @@ $dots = file_get_contents( get_template_directory() . "/dist/images/background/d
                   </div>
                </div>
             </div>
-            <div class="row">
+            <div class="d-flex">
                <div class="col-6 service-block-small-wrapper">
                   <div class="d-flex justify-content-center align-items-center">
                      <div class="text-center">

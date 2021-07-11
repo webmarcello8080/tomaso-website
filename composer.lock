@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0de966eb78ae3f615013b024932b2d81",
+    "content-hash": "d279a5248769d64b4b8dea531269b3c6",
     "packages": [
         {
             "name": "composer/installers",
@@ -952,6 +952,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/genesis-custom-blocks/"
+        },
+        {
+            "name": "wpackagist-plugin/woo-checkout-field-editor-pro",
+            "version": "1.4.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woo-checkout-field-editor-pro/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woo-checkout-field-editor-pro.zip?timestamp=1619101151"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woo-checkout-field-editor-pro/"
         },
         {
             "name": "wpackagist-plugin/woocommerce",

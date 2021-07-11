@@ -1,0 +1,16 @@
+.slogan-block{
+   .slogan-block-first{
+      display:block;
+      font-size: $font-size-base * 4;
+      @include media-breakpoint-down(md) {
+         font-size: $font-size-base * 2.5;
+      }
+   }
+   .slogan-block-second{
+      display:none;
+      font-size: $font-size-base * 4;
+      @include media-breakpoint-down(md) {
+         font-size: $font-size-base * 2.5;
+      }
+   }
+}

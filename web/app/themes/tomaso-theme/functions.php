@@ -25,3 +25,4 @@ if ( is_admin() ){
   new \NewWebMarcello\admin\Menu();
 }
 new \NewWebMarcello\admin\Products();
+new \NewWebMarcello\Frontend\Products();

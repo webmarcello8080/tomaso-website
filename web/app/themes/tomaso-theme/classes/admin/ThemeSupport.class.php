@@ -16,6 +16,9 @@ class ThemeSupport{
       add_theme_support( 'align-wide' );
       add_theme_support( 'editor-styles' );
       add_theme_support( 'woocommerce' );
+
+      // include css for admin area
+      add_action('admin_enqueue_scripts', array($this, 'admin_style'));
    }
 
    public function custom_logo(){
@@ -45,5 +48,11 @@ class ThemeSupport{
    public function post_formats(){
       $post_formats = array('aside','image','gallery','video','audio','link','quote','status');
       add_theme_support( 'post-formats', $post_formats);
+   }
+
+   // Update CSS within in Admin
+   public function admin_style()
+   {
+      wp_enqueue_style('admin-styles', get_template_directory_uri() . '/dist/css/admin.css');
    }
 }

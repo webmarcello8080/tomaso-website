@@ -4,8 +4,7 @@ namespace NewWebMarcello\Frontend;
 
 class Header{
    
-   public function get_logo($wrapper_classes = '', $logo_classes = ''){
-      ?>
+   public function get_logo($wrapper_classes = '', $logo_classes = ''){ ?>
          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="<?= $wrapper_classes ?>" rel="home" >
             <?php
             if ( has_custom_logo() ) {
@@ -15,7 +14,9 @@ class Header{
                   echo '<img class="' . $logo_classes . '" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
             } else {
                   echo '<h1>'. get_bloginfo('name') .'</h1>';
-                  echo '<h5>'. get_bloginfo('description') .'</h5>';
+                  if(get_bloginfo('description')){
+                     echo '<h5>' . get_bloginfo('description') . '</h5>';
+                  }
             }
             ?>         
          </a>

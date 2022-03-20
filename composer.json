@@ -79,7 +79,8 @@
       "rm -rf web/wp/wp-content/themes/twentysixteen",
       "rm -rf web/wp/wp-content/themes/twentyseventeen",
       "rm -rf web/wp/wp-content/themes/twentynineteen",
-      "rm -rf web/wp/wp-content/themes/twentytwenty"
+      "rm -rf web/wp/wp-content/themes/twentytwenty",
+      "rm -rf web/wp/wp-content/themes/twentytwentyone"
     ],
     "test": [
       "phpcs"

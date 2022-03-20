@@ -7,9 +7,9 @@
          array( 
             'theme_location'  => 'header-menu',
             'container'       => 'div',
-            'container_class' => 'collapse navbar-collapse',
+            'container_class' => 'collapse navbar-collapse justify-content-end',
             'container_id'    => 'navbarSupportedContent',
-            'menu_class'      => 'navbar-nav ml-5',
+            'menu_class'      => 'navbar-nav',
             'menu_id'         => '',
             'fallback_cb'     => '\NewWebMarcello\frontend\WPBootstrapNavwalker::fallback',
             'walker'          => new \NewWebMarcello\frontend\WPBootstrapNavwalker(),

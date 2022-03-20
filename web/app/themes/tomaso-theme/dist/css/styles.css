@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap);
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7189,10 +7190,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1, h2, h3, h4, h5, h6 {
   font-style: normal;
-  font-weight: bold;
-  font-family: "Poppins", serif;
   color: #2E266F;
   margin-bottom: 1rem; }
+
+h1, h2, h3, h4 {
+  font-family: "DM Serif Display", serif; }
+
+h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h5, h6 {
+  font-family: "Poppins", serif; }
 
 h1 {
   font-size: 3rem; }

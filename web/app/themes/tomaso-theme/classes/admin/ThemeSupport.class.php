@@ -2,38 +2,42 @@
 
 namespace NewWebMarcello\Admin;
 
-class ThemeSupport{
-   
-   public function __construct(){
-      add_action( 'after_setup_theme', array($this, 'custom_logo') );
-      add_action( 'after_setup_theme', array($this, 'html5_markup') );
-      add_action( 'after_setup_theme', array($this, 'post_formats') );
+class ThemeSupport
+{
 
-      add_theme_support( 'post-thumbnails' );
-      add_theme_support( 'title-tag' );
-      add_theme_support( 'automatic-feed-links' );
-      add_theme_support( 'customize-selective-refresh-widgets' );
-      add_theme_support( 'align-wide' );
-      add_theme_support( 'editor-styles' );
-      add_theme_support( 'woocommerce' );
+   public function __construct()
+   {
+      add_action('after_setup_theme', array($this, 'custom_logo'));
+      add_action('after_setup_theme', array($this, 'html5_markup'));
+      add_action('after_setup_theme', array($this, 'post_formats'));
+
+      add_theme_support('post-thumbnails');
+      add_theme_support('title-tag');
+      add_theme_support('automatic-feed-links');
+      add_theme_support('customize-selective-refresh-widgets');
+      add_theme_support('align-wide');
+      add_theme_support('editor-styles');
+      add_theme_support('woocommerce');
 
       // include css for admin area
       add_action('admin_enqueue_scripts', array($this, 'admin_style'));
    }
 
-   public function custom_logo(){
+   public function custom_logo()
+   {
       $args = array(
-        'header-text' => array( 'site-title', 'site-description' ),
-        'width'              => 400,
-        'height'             => 60,
-        'flex-width'         => true,
-        'flex-height'        => true,
+         'header-text' => array('site-title', 'site-description'),
+         'width'              => 400,
+         'height'             => 60,
+         'flex-width'         => true,
+         'flex-height'        => true,
       );
 
-      add_theme_support( 'custom-logo', $args );
+      add_theme_support('custom-logo', $args);
    }
 
-   public function html5_markup(){
+   public function html5_markup()
+   {
       $args = array(
          'search-form',
          'comment-form',
@@ -42,12 +46,13 @@ class ThemeSupport{
          'caption',
       );
 
-      add_theme_support( 'html5', $args );
+      add_theme_support('html5', $args);
    }
 
-   public function post_formats(){
-      $post_formats = array('aside','image','gallery','video','audio','link','quote','status');
-      add_theme_support( 'post-formats', $post_formats);
+   public function post_formats()
+   {
+      $post_formats = array('aside', 'image', 'gallery', 'video', 'audio', 'link', 'quote', 'status');
+      add_theme_support('post-formats', $post_formats);
    }
 
    // Update CSS within in Admin

@@ -13,7 +13,7 @@ class Header{
 
                   echo '<img class="' . $logo_classes . '" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
             } else {
-                  echo '<h1>'. get_bloginfo('name') .'</h1>';
+                  echo '<h1 class="mb-0">'. get_bloginfo('name') .'</h1>';
                   if(get_bloginfo('description')){
                      echo '<h5>' . get_bloginfo('description') . '</h5>';
                   }

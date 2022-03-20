@@ -15,16 +15,16 @@ $dots = file_get_contents(get_template_directory() . "/dist/images/background/sm
       <?php endif; ?>
       <div class="where-block-body text-center">
          <?php if (block_value('address-1')) : ?>
-            <h6><a href="https://www.google.com.sa/maps/search/<?php block_field('address-1'); ?>" target="_blanck"><?= $pin ?><?php block_field('address-1'); ?></a></h6>
+            <h6><a href="https://www.google.com.sa/maps/search/<?php block_field('address-1'); ?>" target="_blanck"><?= $pin ?><?php block_field('address-1'); ?></a> - <?= block_field('date-1') ?></h6>
          <?php endif; ?>
          <?php if (block_value('address-2')) : ?>
-            <h6><a href="https://www.google.com.sa/maps/search/<?php block_field('address-2'); ?>" target="_blanck"><?= $pin ?><?php block_field('address-2'); ?></a></h6>
+            <h6><a href="https://www.google.com.sa/maps/search/<?php block_field('address-2'); ?>" target="_blanck"><?= $pin ?><?php block_field('address-2'); ?></a> - <?= block_field('date-2') ?></h6>
          <?php endif; ?>
          <?php if (block_value('address-3')) : ?>
-            <h6><a href="https://www.google.com.sa/maps/search/<?php block_field('address-3'); ?>" target="_blanck"><?= $pin ?><?php block_field('address-3'); ?></a></h6>
+            <h6><a href="https://www.google.com.sa/maps/search/<?php block_field('address-3'); ?>" target="_blanck"><?= $pin ?><?php block_field('address-3'); ?></a> - <?= block_field('date-3') ?></h6>
          <?php endif; ?>
          <?php if (block_value('address-4')) : ?>
-            <h6><a href="https://www.google.com.sa/maps/search/<?php block_field('address-4'); ?>" target="_blanck"><?= $pin ?><?php block_field('address-4'); ?></a></h6>
+            <h6><a href="https://www.google.com.sa/maps/search/<?php block_field('address-4'); ?>" target="_blanck"><?= $pin ?><?php block_field('address-4'); ?></a> - <?= block_field('date-4') ?></h6>
          <?php endif; ?>
       </div>
    </div>

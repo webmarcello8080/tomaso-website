@@ -1,0 +1,10 @@
+.single-dish-wrapper{
+   .single-dish{
+      .dish-img-wrapper{
+         flex: 0 0 40%;
+      }
+      .dish-body{
+         flex-grow: 1;
+      }
+   }
+}

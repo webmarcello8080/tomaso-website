@@ -7627,6 +7627,12 @@ body {
   width: 100%;
   height: auto; }
 
+.single-dish-wrapper .single-dish .dish-img-wrapper {
+  flex: 0 0 40%; }
+
+.single-dish-wrapper .single-dish .dish-body {
+  flex-grow: 1; }
+
 .woocommerce button.button.alt, .woocommerce .checkout-button {
   background-color: #FE043C !important;
   border-radius: 0 !important; }

@@ -1,35 +1,51 @@
-.service-block{
+.service-block {
    position: relative;
    overflow: hidden;
-   .service-block-wrapper{
-      .service-block-header{
+
+   .service-block-wrapper {
+      .service-block-header {
          flex-wrap: wrap;
-         .service-block-text{
+
+         .service-block-text {
             z-index: 1;
          }
       }
-      .service-block-body{
-         .service-block-big-wrapper{
+
+      .service-block-body {
+         .service-block-big-wrapper {
             z-index: 1;
             padding: 80px;
-            svg{
+
+            svg {
                width: 200px;
+
+               path {
+                  fill: $primary;
+               }
             }
          }
-         .service-block-body-left{
+
+         .service-block-body-left {
             @include media-breakpoint-down(md) {
                padding-right: $spacer !important;
                margin-bottom: $spacer * 1.5;
             }
-            .service-block-small-wrapper{
+
+            .service-block-small-wrapper {
                z-index: 1;
                padding: $spacer * 2;
-               svg{
+
+               svg {
                   width: 150px;
+
+                  path {
+                     fill: $primary;
+                  }
                }
             }
          }
-         .service-block-small-title{
+
+         .service-block-small-title {
             width: 100%;
             max-width: 200px;
             margin-left: auto;
@@ -39,7 +55,8 @@
          }
       }
    }
-   .dots-background{
+
+   .dots-background {
       position: absolute;
       bottom: 0;
       left: 0;

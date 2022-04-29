@@ -1,41 +1,48 @@
-.where-block{
+.where-block {
    position: relative;
    overflow: hidden;
    padding: 100px 0;
    background-image: url('../images/background/lettuce.png');
    background-repeat: no-repeat;
    background-position: -150px;
-   .where-block-wrapper{
+
+   .where-block-wrapper {
       background-color: $site-background;
       padding: 60px $spacer;
       z-index: 1;
-      .where-block-header{
-         .where-block-title{
-            border-top: 15px solid #FE043C;
+
+      .where-block-header {
+         .where-block-title {
+            border-top: 15px solid $secondary;
             padding-top: 8px;
          }
       }
-      .where-block-body{
-         h6{
-            svg{
-               path{
+
+      .where-block-body {
+         h6 {
+            svg {
+               path {
                   fill: $secondary;
                }
             }
          }
       }
    }
-   .background-dots, .background-dots-2{
+
+   .background-dots,
+   .background-dots-2 {
       position: absolute;
       z-index: 0;
       pointer-events: none;
    }
-   .background-dots{
+
+   .background-dots {
       display: none;
       bottom: -22px;
       left: 0;
    }
-   .background-dots-2{
+
+   .background-dots-2 {
       top: 20px;
       right: 0;
    }

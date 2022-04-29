@@ -15,7 +15,7 @@ class Header{
             } else {
                   echo '<h1 class="mb-0">'. get_bloginfo('name') .'</h1>';
                   if(get_bloginfo('description')){
-                     echo '<h5>' . get_bloginfo('description') . '</h5>';
+                     echo '<h5 class="mb-0">' . get_bloginfo('description') . '</h5>';
                   }
             }
             ?>         

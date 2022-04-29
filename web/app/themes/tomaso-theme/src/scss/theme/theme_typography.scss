@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6{
   font-style: normal;
-  color: $primary;
+  color: $h-font-colour;
   margin-bottom: $spacer;
 }
 h1, h2, h3, h4{
@@ -50,12 +50,15 @@ p{
 .badge{
   padding: 5px 10px;
 }
-
+.bg-light{
+  color: $light-text-colour;
+}
 // blockquote
 blockquote{
   &.wp-block-quote{
     border-left: 15px solid $secondary;
     background-color: $light;
+    color: $light-text-colour;
     font-size: $font-size-base * 1.25;
     font-weight: bold;
     font-style: italic;
@@ -113,7 +116,7 @@ blockquote{
       font-style: normal;
       font-size: $font-size-base;
       text-transform: uppercase;
-      color: $primary;
+      color: $h-font-colour;
     }
   }
 }
@@ -136,7 +139,7 @@ article{
     li{
       &:before {
         content: "\2022";
-        color: $primary;
+        color: $h-font-colour;
         font-weight: bold;
         display: inline-block; 
         width: 1em;

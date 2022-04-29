@@ -1,9 +1,14 @@
-.single-dish-wrapper{
-   .single-dish{
-      .dish-img-wrapper{
+.single-dish-wrapper {
+   .single-dish {
+      @include media-breakpoint-down(sm) {
+         display: block !important;
+      }
+
+      .dish-img-wrapper {
          flex: 0 0 40%;
       }
-      .dish-body{
+
+      .dish-body {
          flex-grow: 1;
       }
    }

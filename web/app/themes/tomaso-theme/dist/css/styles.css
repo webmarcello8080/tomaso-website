@@ -7404,11 +7404,14 @@ body {
       width: 20px;
       margin-left: 14px; }
 
-.site-logo {
+.site-logo-wrapper .site-logo {
   font-size: 60px; }
   @media (max-width: 991.98px) {
-    .site-logo {
+    .site-logo-wrapper .site-logo {
       font-size: 40px; } }
+
+.site-logo-wrapper .site-logo-img {
+  width: 175px; }
 
 .page-header {
   border-left: 15px solid #ae7e32;
@@ -7558,7 +7561,8 @@ body {
         z-index: 0;
         pointer-events: none;
         width: 80%;
-        height: auto; }
+        height: auto;
+        border-radius: 50%; }
   .slider-block .carousel-indicators li {
     background-color: #192533 !important; }
 

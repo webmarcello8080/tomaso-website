@@ -1,25 +1,39 @@
-.footer-section{
+.footer-section {
    position: relative;
    overflow: hidden;
    background-image: url('../images/background/gabage.png');
    background-repeat: no-repeat;
    background-position: right -250px top -150px;
-   
-   .footer-wrapper{
+
+   .footer-wrapper {
       z-index: 1;
-      .footer-area{
-         ul{
+
+      .footer-area {
+         ul {
             list-style-type: none;
             margin: auto;
-            li{
+
+            li {
                display: inline-block;
                margin: 0 $spacer * 0.5;
             }
          }
       }
+
+      .follow-us-wrapper {
+         .follow-us-logo {
+            svg {
+               width: 30px;
+               height: 30px;
+               path{
+                  fill: $primary;
+               }
+            }
+         }
+      }
    }
 
-   .background-dots{
+   .background-dots {
       position: absolute;
       z-index: 0;
       pointer-events: none;

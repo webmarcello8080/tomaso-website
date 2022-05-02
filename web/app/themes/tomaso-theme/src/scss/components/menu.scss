@@ -1,46 +1,58 @@
-.site-header{
+.site-header {
    position: sticky;
    top: 0;
    background-color: $site-background;
    z-index: 10;
-   
-   .navbar-wrapper{
-      .logo-wrapper{
+
+   .navbar-wrapper {
+      .logo-wrapper {
          white-space: normal;
+
+         .site-description {
+            @include media-breakpoint-down(md) {
+               font-size: 20px;
+            }
+         }
       }
 
-      .navbar-collapse{
-         .navbar-nav{
+      .navbar-collapse {
+         .navbar-nav {
             @include media-breakpoint-down(md) {
                margin-left: 0 !important;
             }
-            .menu-item{
+
+            .menu-item {
                margin-left: $spacer;
                margin-right: $spacer;
                color: $h-font-colour;
-               &:hover{
+
+               &:hover {
                   background-color: $light;
                   transition: all 0.3s linear;
                }
 
-               .dropdown-toggle{
-                  &:after{
+               .dropdown-toggle {
+                  &:after {
                      margin-left: $spacer;
                   }
                }
+
                .dropdown-menu {
                   border-radius: 0;
                   background-color: $site-background;
+
                   @include media-breakpoint-down(md) {
                      border: 0 !important;
                   }
-                  .menu-item{
+
+                  .menu-item {
                      margin-left: 0;
                      margin-right: 0;
 
-                     .dropdown-item{
+                     .dropdown-item {
                         color: $h-font-colour;
-                        &:hover{
+
+                        &:hover {
                            background-color: $light;
                            transition: all 0.3s linear;
                         }
@@ -51,8 +63,8 @@
          }
       }
 
-      .navbar-toggler{
-         .navbar-burger-line{
+      .navbar-toggler {
+         .navbar-burger-line {
             display: block;
             height: 3px;
             margin-bottom: 6px;
@@ -62,14 +74,24 @@
             &:nth-child(1) {
                width: 35px;
             }
+
             &:nth-child(2) {
                width: 35px;
             }
+
             &:nth-child(3) {
                width: 20px;
                margin-left: 14px;
             }
          }
       }
+   }
+}
+
+.site-logo {
+   font-size: 60px;
+
+   @include media-breakpoint-down(md) {
+      font-size: 40px;
    }
 }

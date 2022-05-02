@@ -161,6 +161,12 @@ textarea, input {
 
 .wp-block-gallery{
   .blocks-gallery-grid{
+    padding-left: 0 !important;
     list-style-type: none !important;
+    .blocks-gallery-item{
+      &::before{
+        content: '' !important;
+      }
+    }
   }
 }

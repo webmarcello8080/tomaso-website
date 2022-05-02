@@ -18,7 +18,7 @@ $instagram = file_get_contents(get_template_directory() . "/dist/images/logos/in
       <div class="footer-area my-5 d-flex d-flex justify-content-center align-items-center follow-us-wrapper">
          <p class="h5 text-primary mx-3 mb-0">Follow Us:</p>
          <div>
-            <a class="follow-us-logo" href=""><?= $facebook ?></a>
+            <a class="follow-us-logo" href="https://www.facebook.com/Sardinia-Micro-Continent-LTD-101499725895486"><?= $facebook ?></a>
             <a class="follow-us-logo" href=""><?= $instagram ?></a>
          </div>
       </div>

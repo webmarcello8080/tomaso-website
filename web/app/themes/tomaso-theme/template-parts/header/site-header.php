@@ -9,4 +9,4 @@ $header = new \NewWebMarcello\frontend\Header();
       <?php get_template_part('template-parts/menu/site-menu'); ?>
    </nav>
 </header>
-<h1 class="site-logo text-center"><?= get_bloginfo('name') ?></h1>
+<h1 class="site-logo text-center mt-2"><?= get_bloginfo('name') ?></h1>

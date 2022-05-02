@@ -89,6 +89,10 @@
 }
 
 .site-logo-wrapper {
+   @include media-breakpoint-down(md) {
+      display: block !important;
+   }
+
    .site-logo {
       font-size: 60px;
 

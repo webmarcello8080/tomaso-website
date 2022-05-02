@@ -7316,6 +7316,9 @@ textarea:not([type='submit']):not([type='reset']):not([type='checkbox']):not([ty
   box-sizing: border-box;
   border-color: #dee2e6; }
 
+.wp-block-gallery .blocks-gallery-grid {
+  list-style-type: none !important; }
+
 .container-xl, .container-lg, .container-md, .container-sm, .container {
   max-width: 1450px; }
 
